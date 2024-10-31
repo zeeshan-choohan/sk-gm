@@ -89,11 +89,12 @@ const loadBestScore = () => {
         bestScore: loadBestScore(), // Load best score from localStorage
     };
     const sounds = {
-        drop: new Audio('drop.mp3'),
-        collide: new Audio('collision.mp3'),
-        largeCandy: new Audio('largeCandy.mp3'),
-        burstsound: new Audio('burst.mp3')
+        drop: new Audio('/sounds/drop.mp3'),
+        collide: new Audio('/sounds/collision.mp3'),
+        largeCandy: new Audio('/sounds/largeCandy.mp3'),
+        burstsound: new Audio('/sounds/burst.mp3')
     };
+    
 
     const scoreDisplay = document.getElementById('scoreboard');
     const bestScoreDisplay = document.getElementById('bestvalue');
