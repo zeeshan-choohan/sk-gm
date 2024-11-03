@@ -90,7 +90,7 @@ const loadBestScore = () => {
     };
     const sounds = {
         drop: new Audio('/sounds/drop.mp3'),
-        collide: new Audio('/sounds/collision.mp3'),
+        collide: new Audio('/sounds/collide.mp3'),
         largeCandy: new Audio('/sounds/largeCandy.mp3'),
         burstsound: new Audio('/sounds/burst.mp3')
     };
@@ -350,7 +350,7 @@ const loadBestScore = () => {
                         density: 0.5,
                     });
                         World.add(world, upgradedBody);
-                        sounds.largeCandy.play();
+                        sounds.collide.play();
                     }
                     setTimeout(() => {
                         gameState.pairsColliding[indexA] = false;
